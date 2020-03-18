@@ -1,0 +1,70 @@
+.Home-Main-Container {
+  display: flex;
+  flex-flow: column;
+}
+
+.order-container {
+  display: flex;
+}
+.orders-headings-container {
+  display: flex;
+}
+
+.order_id {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  align-items: center;
+}
+
+.order_by {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  align-items: center;
+}
+
+.order_email {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  align-items: center;
+}
+
+.order_contact {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  align-items: center;
+}
+
+.order_shipping_address {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+}
+
+.order-view-button {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orders-outer-container .order-container:nth-child(2n) {
+  background-color: rgb(229, 229, 226);
+}
+
+.order-container button {
+  width: 75px;
+  height: 40px;
+  border: 1px solid var(--theme);
+  background-color: var(--theme);
+  color: white;
+}

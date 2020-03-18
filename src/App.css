@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: white;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+  --theme: #51b7bb;
+}
+.SignIn-Main-Container .signin-background {
+  max-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SignIn-Main-Container .signin-background img {
+  max-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signin-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signin-form-container {
+  background-color: azure;
+  width: 50%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 80vh;
+  border-radius: 15px 0 0 15px;
+}
+
+.signin-form-container h2 {
+  color: #37babf;
+  margin-top: -25px;
+}
+
+.signin-form-container .icons-container {
+  display: flex;
+  margin-top: -15px;
+}
+
+.signin-form-container .icons-container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #d8e6e3;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.signin-form-container .icons-container .icon:hover {
+  background-color: #37babf;
+  color: white;
+  cursor: pointer;
+}
+
+.signin-form-container .inputs-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+}
+
+.signin-form-container .inputs-container input {
+  margin-bottom: 10px;
+  border: none;
+  background-color: #dae4e2;
+  padding: 12px;
+  font-family: "Cambay", sans-serif;
+  border-radius: 5px;
+  color: black;
+  width: 100%;
+  outline: none;
+}
+
+.signin-form-container .inputs-container input::placeholder {
+  font-family: "Cambay", sans-serif;
+  color: #a0adab;
+}
+.signin-form-container .inputs-container button {
+  background: transparent;
+  border: 1.2px solid #37babf;
+  color: #37babf;
+  font-size: 15px;
+  padding: 10px 40px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  outline: none;
+  width: 100%;
+  margin-left: 12px;
+  margin-top: 15px;
+}
+
+.signin-form-container .inputs-container button:hover {
+  background-color: #37babf;
+  color: white;
+  border: white;
+  cursor: pointer;
+}
+
+.inputs-container span {
+  text-align: center;
+  color: #cbd1d0;
+  font-size: smaller;
+}
+
+.signin-form-intro {
+  background-image: linear-gradient(to right, #37babf 0%, #38f9d7 100%);
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border-radius: 0 15px 15px 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-Image h3 {
+  color: #37babf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signin-form-intro img {
+  width: 140px;
+  height: 140px;
+}
+
+.signin-form-intro p {
+  text-align: center;
+}
+
+.signin-form-container .form-Image {
+  display: none;
+}
+
+.signin-form-container .form-Image img {
+  width: 110px;
+  height: 110px;
+}
+
+@media screen and (max-width: 810px) {
+  .signin-form-intro {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .signin-form-container {
+    border-radius: 15px 15px;
+    width: 80%;
+    height: 90vh;
+  }
+
+  .signin-form-container .inputs-container {
+    flex-wrap: wrap;
+  }
+
+  .signin-container h2 {
+    display: none;
+  }
+
+  .signin-form-container .form-Image {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .signin-form-intro {
+    display: none;
+  }
+
+  .signin-form-container {
+    border-radius: 15px 15px;
+    width: 80%;
+    height: 90vh;
+  }
+
+  /* .signin-form-container .inputs-container {
+    width: 150px;
+  } */
+
+  .signin-container h2 {
+    display: none;
+  }
+
+  .signin-form-container .form-Image {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SignIn-Main-Container .signin-background img {
+    height: 120vh;
   }
 }

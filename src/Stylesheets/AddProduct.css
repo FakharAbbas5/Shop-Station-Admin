@@ -1,0 +1,72 @@
+.add-product-main-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.add-product-outer-container {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  /* background-color: orange; */
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product-form-container {
+  width: 60%;
+  height: 110vh;
+  background-color: var(--mainWhite);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: column;
+}
+
+.add-product-form-container h2 {
+  color: var(--theme);
+  text-align: center;
+}
+
+.form-inner-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-product-label {
+  display: flex;
+  justify-content: flex-start;
+  width: 15%;
+  /* background-color: palegreen; */
+  /* float: left; */
+  height: 45px;
+  align-items: center;
+  margin-left: 22%;
+}
+
+.add-product-input {
+  width: 40%;
+  /* background-color: paleturquoise; */
+  /* float: left; */
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  padding-top: 7px;
+  /* align-items: center; */
+}
+.add-product-input input {
+  /* margin-bottom: 10px; */
+  border: 1px solid var(--theme);
+  /* background-color: #dae4e2; */
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: black;
+  width: 70%;
+  outline: none;
+}
+
+.add-product-Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}

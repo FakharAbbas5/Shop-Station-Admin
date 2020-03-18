@@ -1,0 +1,39 @@
+.Nav-outer-Container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav-Logo-Container img {
+  width: 100px;
+  height: 100px;
+}
+
+.Nav-Links {
+  background-color: var(--theme);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav-Links .Link-Container {
+  width: 150px;
+  background: transparent;
+  border: 1px solid white;
+  margin: 5px;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.Nav-Links .Link-Container:hover {
+  background-color: white;
+}
+.Nav-Links .Link-Container:hover span {
+  color: var(--theme);
+}
